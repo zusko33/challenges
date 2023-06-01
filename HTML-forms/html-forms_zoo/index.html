@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>HTML Zoo Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section aria-label="contact">
+      <h2 id="form-heading">Zoo Visitor Sign Up</h2>
+      <p id="form-description">
+        Please provide all necessary information on your stay with us.
+      </p>
+
+      <form aria-labelledby="form-heading" aria-describedby="form-description">
+        <fieldset>
+          <legend>Enter your information</legend>
+
+          <!-- Email: label & input -->
+          <label for="email">Hire write your e-mail</label>
+          <input type="email" id="email" name="email" />
+          <!-- Date: label & input -->
+          <label for="date">Choose a date</label>
+          <input type="date" id="date" name="date" />
+          <fieldset class="radio-options">
+            <legend>Which one of these animals would you like to visit?</legend>
+
+            <!-- Radio Buttons: labels & inputs -->
+            <input type="radio" id="sloth-radio" value="sloths" />
+            <label for="sloth-radio">relaxed sloths</label>
+            <input type="radio" id="kangaroos-radio" value="kangaroos" />
+            <label for="kangaroos-radio">jumpy kangaroos</label>
+            <input type="radio" id="racoons-radio" value="racoons" />
+            <label for="racoons-radio">thieving racoons</label>
+          </fieldset>
+
+          <!-- Textarea: label & input -->
+          <label for="textarea">Hire you can write your concerns:</label>
+          <textarea id="textarea" name="concerns"></textarea>
+          <!-- Two Checkboxes: labels & inputs -->
+          <label for="accept-data-privacy"
+            >I accept the data privacy agreement
+            <input
+              type="checkbox"
+              name="accept-data-privacy"
+              id="accept-data-privacy"
+          /></label>
+
+          <label for="accept-newsletter"
+            >I sign for a newsletter
+            <input
+              type="checkbox"
+              name="accept-newsletter"
+              id="accept-newsletter"
+          /></label>
+
+          <!-- Two Buttons: reset & submit -->
+          <button type="submit">submit</button>
+          <button type="reset">reset</button>
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>
