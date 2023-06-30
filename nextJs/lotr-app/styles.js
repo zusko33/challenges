@@ -1,4 +1,10 @@
 import { createGlobalStyle } from "styled-components";
+import { Lora } from "next/font/google";
+
+const lora = Lora({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+});
 
 export default createGlobalStyle`
   *,
@@ -9,6 +15,6 @@ export default createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: system-ui;
+    font-family: ${lora.style.fontFamily} serif, system-ui;
   }
 `;
